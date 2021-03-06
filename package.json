@@ -1,0 +1,27 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Projeto Curso de Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evander97/rest-api-project.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "api"
+  ],
+  "author": "Evander Cristiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evander97/rest-api-project/issues"
+  },
+  "homepage": "https://github.com/Evander97/rest-api-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
