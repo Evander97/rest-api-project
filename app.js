@@ -6,6 +6,7 @@ const rotaProdutos = require('./routes/produtos');
 const rotaPedidos = require('./routes/pedidos');
 
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads')); // Tornando público o diretório de uploads 
 app.use(express.urlencoded({extended: false})); //apenas dados simples
 app.use(express.json()); //json de entrada no body  
 
