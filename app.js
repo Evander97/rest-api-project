@@ -4,6 +4,7 @@ const morgan = require('morgan');
 
 const rotaProdutos = require('./routes/produtos');
 const rotaPedidos = require('./routes/pedidos');
+const rotaUsuarios = require('./routes/usuarios');
 
 app.use(morgan('dev'));
 app.use('/uploads', express.static('uploads')); // Tornando público o diretório de uploads 
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
 
 app.use('/produtos', rotaProdutos);
 app.use('/pedidos', rotaPedidos);
+app.use('/usuarios', rotaUsuarios);
 
 // Quando não encontra a rota, entra aqui:
 app.use((req, res, next) => {
